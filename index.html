@@ -16,10 +16,18 @@
         //prro = "tugfa"
 
         //const solo se puede declarar una vez y asignarsele un solo valor
-        const prro = "<i>prrete</i>";
+        //const prro = "<i>prrete</i>";
         //prro = "tugfa"
 
-        document.write(prro);
+        //variables locales y globales
+        var x = 20;
+        function fun()
+        {
+            var x = 40;
+            document.write(x);
+        }
+        fun();
+        document.write(x);
     </script>
 </body>
 </html>
