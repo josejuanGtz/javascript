@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //6.- tipos de variables en javascript
+        document.write("<h3> 6.- tipos de variables en javascript</h3>");
         //var se puede declarar multiples veces
         var prro = "<i>prrete</i>";
         prro = "tugfa"
@@ -19,8 +19,10 @@
         //const solo se puede declarar una vez y asignarsele un solo valor
         //const prro = "<i>prrete</i>";
         //prro = "tugfa"
+        document.write(prro);
+        document.write("<br>---------------------------------<br>");
 
-        //7.- variables locales y globales
+        document.write("<h3> 7.- variables locales y globales</h3>");
         var x = 20;
         function fun()
         {
@@ -28,35 +30,42 @@
         //    document.write(x);
         }
         fun();
-        //document.write(x);
+        document.write(x);
+        document.write("<br>---------------------------------<br>");
 
-        //8.- consola
+        document.write("<h3> 8.- consola </h3>");
         //var prro = "meta brains";
         //console.warn(prro);
-        //console.warn(["uno","dos","tres"]);
+        console.warn(["uno","dos","tres"]);
 
-        //9.- condicion if
-        var a = 30;
+        document.write("<h3> 9.- condicion if </h3>");
+        var a = 10;
         var b = 20;
-        //if (a<b) {
-        //    document.write("variable a es menor que b");
-        //}
+        if (a<b) {
+            document.write("variable a es menor que b");
+        }
+        document.write("<br>---------------------------------<br>");
 
-        //10. condicion if else
-        //if (a<b) {
-        //    document.write("variable a es menor a variable b");
-        //} else {
-        //    document.write("variable a es mayor a variable b");
-        //}
+        document.write("<h3> 10.- condicion if else </h3>");
+        if (a<b) 
+        {
+            document.write("variable a es menor a variable b");
+        } 
+        else 
+        {
+            document.write("variable a es mayor a variable b");
+        }
+        document.write("<br>---------------------------------<br>");
 
-        //11.- ternary condition
+        document.write("<h3> 11.- ternary condition </h3>");
         var x = 10;
         var y ;
         //x<50?(y = "es menor que 50"):("no es menor que 50");
-        y = "imprimir" + (x<50? "SI es menor que 50":"NO es menor que 50");
-        //document.write(y);
+        y = "imprimir" + (x<50? " SI es menor que 50":" NO es menor que 50");
+        document.write(y);
+        document.write("<br>---------------------------------<br>");
 
-        //12.- condición switch
+        document.write("<h3> 12.- condición switch </h3>");
         var day = 4;
         switch (day) 
         {
@@ -86,8 +95,9 @@
                 
                 break;
         }
+        document.write("<br>---------------------------------<br>");
 
-        //13.- condición if else if
+        document.write("<h3> 13.- condición if else if </h3>");
         if(day == 1)
         {
             document.write("Today is monday");
@@ -120,8 +130,9 @@
         {
             document.write("WTF");
         }
+        document.write("<br>---------------------------------<br>");
 
-        //14.- Break and continue
+        document.write("<h3> 14.- Break and continue </h3>");
         for (let index = 0; index <= 10; index++) 
         {
             if(index == 4)
@@ -129,10 +140,27 @@
                 document.write("Hasta aqui prro " + index + "<br>");
                 continue;
             }
-                
-
             document.write("Fila " + index + "<br>");
         }
+        document.write("<br>---------------------------------<br>");
+
+
+        document.write("<h3>15.- Tipos de datos</h3>");
+        var hello = "hola prro";
+        hello = 23;
+        hello = true;
+        hello = ["uno","dos","tres"];
+        hello = {
+            firstname:"pito",
+            lastname:"perez"
+        };
+        document.write(hello);
+        document.write(typeof hello);
+
+        var hello2;
+        document.write(hello2);
+        document.write("<br>---------------------------------<br>");
+
     </script>
 </body>
 </html>
