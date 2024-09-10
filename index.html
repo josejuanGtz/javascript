@@ -263,9 +263,14 @@
         document.write("<br>---------------------------------<br>");
 
         document.write("<h3>24.- funciones return</h3>");
-        //function abc(params) {
-            
-        //}
+        function abc_return(first = "number one",last = "last one") 
+        {
+            var result = first + " " + last;
+            return result;
+        }
+
+        var fn_return = abc_return("cr7","messi");
+        document.write(fn_return);
         document.write("<br>---------------------------------<br>");
 
     </script>
