@@ -223,11 +223,51 @@
         }
         document.write("<br>---------------------------------<br>");
 
-        document.write("<h3>23.- notificaciones de alertas </h3>");
+        document.write("<h3>21.- prompt box </h3>");
+        var promp1 = prompt("¿que edad tienes?");
+        if (promp1>=0 && promp1<=10) {
+            document.write("eres menor de 10");
+        } 
+        else if(promp1>=11 && promp1<=20){
+            document.write("estas entre 11 y 20");
+        }
+        else if(promp1>=21 && promp1<=30){
+            document.write("estas entre 21 y 30");
+        }
+        else if(promp1>=31 && promp1<=40){
+            document.write("estas entre 31 y 40");
+        }
+        else if(promp1>=41 && promp1<=50){
+            document.write("estas entre 41 y 50");
+        }
+        else if(promp1>=51){
+            document.write("tienes más de 50 alv");
+        }
         document.write("<br>---------------------------------<br>");
 
-        document.write("<h3>24.- notificaciones de alertas </h3>");
+
+        document.write("<h3>22.- funciones </h3>");
+        function abc() 
+        {
+            document.write("metabrains");    
+        }
+        abc();
         document.write("<br>---------------------------------<br>");
+
+        document.write("<h3>23.- funciones con parametros</h3>");
+        function abc_params(first = "number one",last = "last one") 
+        {
+            document.write("metabrains " + first + " ," + last);    
+        }
+        abc_params("ultimo");
+        document.write("<br>---------------------------------<br>");
+
+        document.write("<h3>24.- funciones return</h3>");
+        //function abc(params) {
+            
+        //}
+        document.write("<br>---------------------------------<br>");
+
     </script>
 </body>
 </html>
