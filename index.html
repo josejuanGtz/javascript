@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento de prueba javascript</title>
 </head>
-<body>
+<body onkeypress="funcion_para_boton()">
     <script>
         document.write("<h3> 6.- tipos de variables en javascript</h3>");
         //var se puede declarar multiples veces
@@ -273,6 +273,16 @@
         document.write(fn_return);
         document.write("<br>---------------------------------<br>");
 
+
+        document.write("<h3>25.- Eventos</h3>");
+        function funcion_para_boton()
+        {
+            alert("Presionaste boton");
+        }
+        document.write("<br>---------------------------------<br>");
+
     </script>
+    <button onmouseenter="funcion_para_boton()">Click here</button>
+
 </body>
 </html>
