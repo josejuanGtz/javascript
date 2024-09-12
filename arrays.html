@@ -32,7 +32,7 @@
             
             document.write("<br>---------------------------------<br>");
 
-            document.write("<h3> 31.- Ordenamiento de Arrays </h3>");
+            document.write("<h3> 32.- Ordenamiento de Arrays </h3>");
             array1.sort();
             document.write(array1 + "<br>");
 
@@ -40,14 +40,14 @@
             document.write(array1);
             document.write("<br>---------------------------------<br>");
 
-            document.write("<h3> 32.- metodos pop y push Arrays </h3>");
+            document.write("<h3> 33.- metodos pop y push Arrays </h3>");
             array1.pop();//elimina el último elemento del array
             document.write(array1);
             array1.push("oaxaca");//agrega un elemento al final del array
             document.write(array1);
             document.write("<br>---------------------------------<br>");
 
-            document.write("<h3> 33.- metodos shift y unshift Arrays </h3>");
+            document.write("<h3> 34.- metodos shift y unshift Arrays </h3>");
             var array1 = ["miguel","antonio","victor"];
             document.write(array1 + "<br>");
             array1.shift();//elimina el primer elemento del array
@@ -55,6 +55,18 @@
             array1.unshift("alejandro");
             document.write(array1);//agrega un elemento al inicio del array
             document.write("<br>---------------------------------<br>");
+
+            document.write("<h3> 35.- metodos concat y join Arrays </h3>");
+            var array1 = ["a","b","c"];
+            var array2 = [1,2,3];
+            var array3 = array1.concat(array2);
+            document.write(array3 + "<br>");
+            
+            var array4 = array3.join(" ");
+            document.write(array4);
+            
+            document.write("<br>---------------------------------<br>");
+
         </script>
 
     </body>
