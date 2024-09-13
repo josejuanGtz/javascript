@@ -88,6 +88,14 @@
             document.write(array1.lastIndexOf("b",2));
             document.write("<br>---------------------------------<br>");
 
+            document.write("<h3> 39.- foreach en Arrays </h3>");
+            
+            array1.forEach(loop_foreach_array);
+            function loop_foreach_array(value_each,index_each) 
+            {
+                document.write("indice: " + index_each + " - " + value_each + "<br>");    
+            }
+            document.write("<br>---------------------------------<br>");
 
         </script>
 
