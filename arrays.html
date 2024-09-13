@@ -108,9 +108,30 @@
             document.write("<br>---------------------------------<br>");
 
             document.write("<h3> 41.- metodo include en Arrays </h3>");
-            var array_include = [20,30,"40",50,60];
+            var array_include = [10,20,30,40,50,60];
             document.write(array_include + "<br>");
             document.write(array_include.includes("40"));
+            document.write("<br>---------------------------------<br>");
+
+            document.write("<h3> 42.- metodos some y every en Arrays </h3>");
+            var array_some = array_include.slice(-4);
+            document.write(array_some + "<br>");
+            var ban_some = array_some.some(sicontiene);
+            var ban_every = array_some.every(sicontiene);
+
+            function sicontiene(valor) 
+            {
+                var ban = false;
+                if (valor >= 50) 
+                {
+                    ban = true;
+                }
+
+                return ban;
+            }
+            document.write(ban_some + "<br>");
+            document.write(ban_every);
+
             document.write("<br>---------------------------------<br>");
 
         </script>
