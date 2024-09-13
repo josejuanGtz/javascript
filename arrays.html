@@ -57,7 +57,7 @@
             document.write("<br>---------------------------------<br>");
 
             document.write("<h3> 35.- metodos concat y join Arrays </h3>");
-            var array1 = ["a","b","c","d","e","f"];
+            var array1 = ["a","b","c","d","b","e","f","b"];
             var array2 = [1,2,3];
             var array3 = array1.concat(array2);
             document.write(array3 + "<br>");
@@ -81,6 +81,11 @@
             document.write(ban_array + "<br>");
             ban_array = Array.isArray(array1[0]);
             document.write(ban_array);
+            document.write("<br>---------------------------------<br>");
+
+            document.write("<h3> 38.- metodos indexof y lastIndex Arrays </h3>");
+            document.write(array1.indexOf("b",2)+ "<br>");
+            document.write(array1.lastIndexOf("b",2));
             document.write("<br>---------------------------------<br>");
 
 
