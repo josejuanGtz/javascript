@@ -154,6 +154,23 @@
             document.write(ban_find_index);
             document.write("<br>---------------------------------<br>");
 
+            document.write("<h3> 44.- metodo filter Arrays </h3>");
+            var array_filter = array_include.slice(-5);
+            document.write(array_filter + "<br>");
+            var ban_filter = array_filter.filter(sicontiene);
+
+            function sicontiene(valor) 
+            {
+                var ban = false;
+                if (valor >= 50) 
+                {
+                    ban = true;
+                }
+
+                return ban;
+            }
+            document.write(ban_filter);
+            document.write("<br>---------------------------------<br>");
         </script>
 
     </body>
