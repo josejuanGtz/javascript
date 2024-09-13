@@ -134,6 +134,26 @@
 
             document.write("<br>---------------------------------<br>");
 
+            document.write("<h3> 43.- metodos find y findindex en Arrays </h3>");
+            var array_find = array_include.slice(-5);
+            document.write(array_find + "<br>");
+            var ban_find = array_find.find(sicontiene);
+            var ban_find_index = array_find.findIndex(sicontiene);
+
+            function sicontiene(valor) 
+            {
+                var ban = false;
+                if (valor >= 50) 
+                {
+                    ban = true;
+                }
+
+                return ban;
+            }
+            document.write(ban_find + "<br>");
+            document.write(ban_find_index);
+            document.write("<br>---------------------------------<br>");
+
         </script>
 
     </body>
