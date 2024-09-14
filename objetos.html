@@ -68,8 +68,8 @@
         }
         document.write("<br>---------------------------------<br>");
 
-        document.write("<h3> 48.- metodos string</h3>");
-        var palabra = "hello world";
+        document.write("<h3> 48.- metodos string PARTE 1</h3>");
+        var palabra = "hello you world, i have a news for you today";
         //tamaño de la cadena de texto
         const palabra_len = palabra.length;
 
@@ -99,9 +99,28 @@
         document.write("si empieza hell: " + palabra_star + "<br>");
         document.write("si termina rld: " + palabra_end + "<br>");
         document.write("indice letra o: " + palabra_charindex + "<br>");
+
         document.write("<br>---------------------------------<br>");
 
-        
+        document.write("<h3> 49.- metodos string PARTE 2</h3>");
+        //match
+        const palabra_match = palabra.match(/you/g);
+
+        //primer indice de palabra
+        const palabra_indexof = palabra.indexOf("news");
+
+        //ultimo indice de palabra
+        const palabra_lastindexof = palabra.lastIndexOf("you");
+
+        //reemplazar
+        const palabra_replace = palabra.replace(/you/g,"them");
+
+        document.write("palabra match: " + palabra_match + "<br>");
+        document.write("indexOf: " + palabra_indexof + "<br>");
+        document.write("lastIndexOf: " + palabra_lastindexof + "<br>");
+        document.write("replace: " + palabra_replace + "<br>");
+        document.write("<br>---------------------------------<br>");
+
     </script>
 
     </body>
