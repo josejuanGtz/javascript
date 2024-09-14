@@ -68,6 +68,38 @@
         }
         document.write("<br>---------------------------------<br>");
 
+        document.write("<h3> 48.- metodos string</h3>");
+        var palabra = "hello world";
+        //tamaño de la cadena de texto
+        const palabra_len = palabra.length;
+
+        //cambiar a mayusculas
+        const palabra_en_mayus = palabra.toUpperCase();
+        
+        //cambiar a minusculas
+        const palabra_en_minus = palabra.toLowerCase();
+
+        //validar si contiene
+        const palabra_include = palabra.includes("hello");
+
+        //empieza con
+        const palabra_star = palabra.startsWith("hell");
+
+        //termina con
+        const palabra_end = palabra.endsWith("rld");
+
+        //indice de un caracter especifico
+        const palabra_charindex = palabra.search("o");
+
+        document.write("palabra completa: " + palabra + "<br>");
+        document.write("tamaño: " + palabra_len + "<br>");
+        document.write("mayusculas: " + palabra_en_mayus + "<br>");
+        document.write("minusculas: " + palabra_en_minus + "<br>");
+        document.write("si contiene hello: " + palabra_include + "<br>");
+        document.write("si empieza hell: " + palabra_star + "<br>");
+        document.write("si termina rld: " + palabra_end + "<br>");
+        document.write("indice letra o: " + palabra_charindex + "<br>");
+        document.write("<br>---------------------------------<br>");
 
         
     </script>
