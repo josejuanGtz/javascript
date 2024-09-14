@@ -8,6 +8,8 @@
 
     <body>
     <script>
+        document.write("<h3> 45.- Objetos </h3>");
+
         var persona = {
 
             nombre: "pedro",
@@ -30,6 +32,34 @@
         document.write(persona.nombre_completo() + "<br>");
         document.write(otra_persona.nombre);
         console.log(persona);
+
+        document.write("<br>---------------------------------<br>");
+
+
+        document.write("<h3> 46.- Arrays de Objetos</h3>");
+        var heroes = [
+            {
+                nombre:"ironman",
+                ciudad:"ney york"
+            },
+            {
+                nombre:"spiderman",
+                ciudad:"queens"
+            },
+            {
+                nombre:"thor",
+                ciudad:"asgard"
+            }
+        ];
+
+        for (let index = 0; index < heroes.length; index++) 
+        {
+            document.write("nombre: " + heroes[index].nombre + ", ciudad: " + heroes[index].ciudad + "<br>");
+                    
+        }
+
+        console.log(heroes);
+        document.write("<br>---------------------------------<br>");
     </script>
 
     </body>
