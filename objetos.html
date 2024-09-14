@@ -121,6 +121,45 @@
         document.write("replace: " + palabra_replace + "<br>");
         document.write("<br>---------------------------------<br>");
 
+        document.write("<h3> 50.- metodos string PARTE 3</h3>");
+        
+        var palabra_3 = "    hello you world, i have a news for you today";
+        
+        //trim
+        const palabra_trim = palabra_3.trim();
+        //charAt
+        const palabra_charat = palabra_trim.charAt(6);
+        //charatCode
+        const palabra_charCode = palabra_trim.charCodeAt(6);
+        //from char code
+        const palabra_code_char= String.fromCharCode(120);
+        //concat
+        const palabra_concat =palabra_trim.concat("prro");
+        //repeat
+        const palabra_repeat = palabra_trim.repeat(3);
+        //split
+        const palabra_split =palabra_trim.split(" ");
+        //slice
+        const palabra_slice = palabra_trim.slice(2,5);
+        //substr
+        const palabra_substr = palabra_trim.substr(2,5);
+        //substring
+        const palabra_sub = palabra_trim.substring(2,5);
+
+
+        document.write("palabra : " + palabra_3 + "<br>");
+        document.write("trim: " + palabra_trim + "<br>");
+        document.write("charAt: " + palabra_charat + "<br>");
+        document.write("charAtCode: " + palabra_charCode + "<br>");
+        document.write("fromCharCode: " + palabra_code_char + "<br>");
+        document.write("concat: " + palabra_concat + "<br>");
+        document.write("repeat: " + palabra_repeat + "<br>");
+        document.write("split: " + palabra_split + "<br>");
+        document.write("slice: " + palabra_slice + "<br>");
+        document.write("substr: " + palabra_substr+ "<br>");
+        document.write("substring: " + palabra_sub + "<br>");
+        document.write("<br>---------------------------------<br>");
+
     </script>
 
     </body>
