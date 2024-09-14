@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            objetos en javascript
+        </title>
+    </head>
+
+    <body>
+    <script>
+        var persona = {
+
+            nombre: "pedro",
+            apaterno: "perez",
+            amaterno: "pereira",
+            edad:30,
+            email:"correo@gmail.com",
+            materias:["espaniol","matematicas","historia"],
+            nombre_completo:function()
+            {
+                return this.nombre + " " + this.apaterno + " " + this.amaterno;
+            }
+        }
+
+        var otra_persona = new Object();
+        otra_persona.nombre = "homero";
+        otra_persona.apaterno = "simpson";
+        otra_persona.edad = 33;
+
+        document.write(persona.nombre_completo() + "<br>");
+        document.write(otra_persona.nombre);
+        console.log(persona);
+    </script>
+
+    </body>
+</html>
