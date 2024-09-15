@@ -160,6 +160,37 @@
         document.write("substring: " + palabra_sub + "<br>");
         document.write("<br>---------------------------------<br>");
 
+
+        document.write("<h3> 51.- metodos numericos</h3>");
+        var a = 10.5555;
+        
+        //convertir a numero
+        var b = Number(a);
+
+        //convertir a entero
+        b = parseInt(a);
+
+
+        //convertir a float
+        b = parseFloat(a);
+
+        //valida si es cantidad finita
+        var c = isFinite("prro");
+
+        //validaar si es entero
+        c = Number.isInteger(a);
+
+        //redondeo a n decimales
+        c = a.toFixed(2);
+        var d = a.toPrecision(4);
+
+        document.write(b + "<br>");
+        document.write(c + "<br>");
+        document.write(d);
+        document.write("<br>---------------------------------<br>");
+
+        
+
     </script>
 
     </body>
