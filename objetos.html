@@ -189,8 +189,32 @@
         document.write(d);
         document.write("<br>---------------------------------<br>");
 
-        
 
+        document.write("<h3> 52.- metodos math</h3>");
+        //redondea hacia abajo
+        d = Math.ceil(4.55);
+        document.write(d + "<br>");
+        
+        //redondea hacia arriba
+        d = Math.floor(4.55);
+        document.write(d + "<br>");
+        
+        //redondea hacia el entero más próximo, si es < 0.5 redondea hacia abajo y si es mayor hacia arriba
+        d = Math.round(4.55);
+        document.write(d + "<br>");
+
+        //quita los decimales
+        d = Math.trunc(4.55);
+        document.write(d + "<br>");
+
+        //obtiene el maximo valor de un rango
+        d = Math.max(40,60,55,32,65,12,9);
+        document.write(d + "<br>");
+
+        //obtiene el minimo valor de un rango
+        d = Math.min(40,60,55,32,65,12,9);
+        document.write(d + "<br>");
+        document.write("<br>---------------------------------<br>");
     </script>
 
     </body>
