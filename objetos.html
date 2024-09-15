@@ -190,31 +190,62 @@
         document.write("<br>---------------------------------<br>");
 
 
-        document.write("<h3> 52.- metodos math</h3>");
+        document.write("<h3> 52.- metodos math PARTE 1</h3>");
         //redondea hacia abajo
         d = Math.ceil(4.55);
-        document.write(d + "<br>");
+        document.write("ceil: " + d + "<br>");
         
         //redondea hacia arriba
         d = Math.floor(4.55);
-        document.write(d + "<br>");
+        document.write("floor: " + d + "<br>");
         
         //redondea hacia el entero más próximo, si es < 0.5 redondea hacia abajo y si es mayor hacia arriba
         d = Math.round(4.55);
-        document.write(d + "<br>");
+        document.write("round: " + d + "<br>");
 
         //quita los decimales
         d = Math.trunc(4.55);
-        document.write(d + "<br>");
+        document.write("trunc: " + d + "<br>");
 
         //obtiene el maximo valor de un rango
         d = Math.max(40,60,55,32,65,12,9);
-        document.write(d + "<br>");
+        document.write("max: " + d + "<br>");
 
         //obtiene el minimo valor de un rango
         d = Math.min(40,60,55,32,65,12,9);
-        document.write(d + "<br>");
+        document.write("min: " + d + "<br>");
         document.write("<br>---------------------------------<br>");
+
+        
+        document.write("<h3> 53.- metodos math PARTE 2</h3>");
+        //raiz cuadrada
+        d = Math.sqrt(64);
+        document.write("sqrt: " + d + "<br>");
+        
+        //raiz cubica
+        d = Math.cbrt(64);
+        document.write("cbrt: " + d + "<br>");
+
+        //exponencial a n potencia
+        d = Math.pow(4,3);
+        document.write("pow: " + d + "<br>");
+
+        //numero random
+        d = Math.trunc(Math.random() * 100);
+        document.write("random: " + d + "<br>");
+
+        //valor absoluto
+        d = Math.abs(-88);
+        document.write("abs: " + d + "<br>");
+
+        //valor de pi
+        d = Math.PI;
+        document.write("PI: " + d + "<br>");
+
+        document.write("<br>---------------------------------<br>");
+
+
+        
     </script>
 
     </body>
