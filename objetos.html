@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            objetos en javascript
+        </title>
+    </head>
+
+    <body>
+    <script>
+        document.write("<h3> 45.- Objetos </h3>");
+
+        var persona = {
+
+            nombre: "pedro",
+            apaterno: "perez",
+            amaterno: "pereira",
+            edad:30,
+            email:"correo@gmail.com",
+            materias:["espaniol","matematicas","historia"],
+            nombre_completo:function()
+            {
+                return this.nombre + " " + this.apaterno + " " + this.amaterno;
+            }
+        }
+
+        var otra_persona = new Object();
+        otra_persona.nombre = "homero";
+        otra_persona.apaterno = "simpson";
+        otra_persona.edad = 33;
+
+        document.write(persona.nombre_completo() + "<br>");
+        document.write(otra_persona.nombre);
+        console.log(persona);
+
+        document.write("<br>---------------------------------<br>");
+
+
+        document.write("<h3> 46.- Arrays de Objetos</h3>");
+        var heroes = [
+            {
+                nombre:"ironman",
+                ciudad:"ney york"
+            },
+            {
+                nombre:"spiderman",
+                ciudad:"queens"
+            },
+            {
+                nombre:"thor",
+                ciudad:"asgard"
+            }
+        ];
+
+        for (let index = 0; index < heroes.length; index++) 
+        {
+            document.write("nombre: " + heroes[index].nombre + ", ciudad: " + heroes[index].ciudad + "<br>");
+                    
+        }
+
+        console.log(heroes);
+        document.write("<br>---------------------------------<br>");
+
+        document.write("<h3> 47.- for in de Objetos</h3>");
+        for (const key in persona) 
+        {
+            document.write(key + ": " + persona[key] + "<br>");
+        }
+        document.write("<br>---------------------------------<br>");
+
+        document.write("<h3> 48.- metodos string PARTE 1</h3>");
+        var palabra = "hello you world, i have a news for you today";
+        //tamaño de la cadena de texto
+        const palabra_len = palabra.length;
+
+        //cambiar a mayusculas
+        const palabra_en_mayus = palabra.toUpperCase();
+        
+        //cambiar a minusculas
+        const palabra_en_minus = palabra.toLowerCase();
+
+        //validar si contiene
+        const palabra_include = palabra.includes("hello");
+
+        //empieza con
+        const palabra_star = palabra.startsWith("hell");
+
+        //termina con
+        const palabra_end = palabra.endsWith("rld");
+
+        //indice de un caracter especifico
+        const palabra_charindex = palabra.search("o");
+
+        document.write("palabra completa: " + palabra + "<br>");
+        document.write("tamaño: " + palabra_len + "<br>");
+        document.write("mayusculas: " + palabra_en_mayus + "<br>");
+        document.write("minusculas: " + palabra_en_minus + "<br>");
+        document.write("si contiene hello: " + palabra_include + "<br>");
+        document.write("si empieza hell: " + palabra_star + "<br>");
+        document.write("si termina rld: " + palabra_end + "<br>");
+        document.write("indice letra o: " + palabra_charindex + "<br>");
+
+        document.write("<br>---------------------------------<br>");
+
+        document.write("<h3> 49.- metodos string PARTE 2</h3>");
+        //match
+        const palabra_match = palabra.match(/you/g);
+
+        //primer indice de palabra
+        const palabra_indexof = palabra.indexOf("news");
+
+        //ultimo indice de palabra
+        const palabra_lastindexof = palabra.lastIndexOf("you");
+
+        //reemplazar
+        const palabra_replace = palabra.replace(/you/g,"them");
+
+        document.write("palabra match: " + palabra_match + "<br>");
+        document.write("indexOf: " + palabra_indexof + "<br>");
+        document.write("lastIndexOf: " + palabra_lastindexof + "<br>");
+        document.write("replace: " + palabra_replace + "<br>");
+        document.write("<br>---------------------------------<br>");
+
+        document.write("<h3> 50.- metodos string PARTE 3</h3>");
+        
+        var palabra_3 = "    hello you world, i have a news for you today";
+        
+        //trim
+        const palabra_trim = palabra_3.trim();
+        //charAt
+        const palabra_charat = palabra_trim.charAt(6);
+        //charatCode
+        const palabra_charCode = palabra_trim.charCodeAt(6);
+        //from char code
+        const palabra_code_char= String.fromCharCode(120);
+        //concat
+        const palabra_concat =palabra_trim.concat("prro");
+        //repeat
+        const palabra_repeat = palabra_trim.repeat(3);
+        //split
+        const palabra_split =palabra_trim.split(" ");
+        //slice
+        const palabra_slice = palabra_trim.slice(2,5);
+        //substr
+        const palabra_substr = palabra_trim.substr(2,5);
+        //substring
+        const palabra_sub = palabra_trim.substring(2,5);
+
+
+        document.write("palabra : " + palabra_3 + "<br>");
+        document.write("trim: " + palabra_trim + "<br>");
+        document.write("charAt: " + palabra_charat + "<br>");
+        document.write("charAtCode: " + palabra_charCode + "<br>");
+        document.write("fromCharCode: " + palabra_code_char + "<br>");
+        document.write("concat: " + palabra_concat + "<br>");
+        document.write("repeat: " + palabra_repeat + "<br>");
+        document.write("split: " + palabra_split + "<br>");
+        document.write("slice: " + palabra_slice + "<br>");
+        document.write("substr: " + palabra_substr+ "<br>");
+        document.write("substring: " + palabra_sub + "<br>");
+        document.write("<br>---------------------------------<br>");
+
+
+        document.write("<h3> 51.- metodos numericos</h3>");
+        var a = 10.5555;
+        
+        //convertir a numero
+        var b = Number(a);
+
+        //convertir a entero
+        b = parseInt(a);
+
+
+        //convertir a float
+        b = parseFloat(a);
+
+        //valida si es cantidad finita
+        var c = isFinite("prro");
+
+        //validaar si es entero
+        c = Number.isInteger(a);
+
+        //redondeo a n decimales
+        c = a.toFixed(2);
+        var d = a.toPrecision(4);
+
+        document.write(b + "<br>");
+        document.write(c + "<br>");
+        document.write(d);
+        document.write("<br>---------------------------------<br>");
+
+
+        document.write("<h3> 52.- metodos math PARTE 1</h3>");
+        //redondea hacia abajo
+        d = Math.ceil(4.55);
+        document.write("ceil: " + d + "<br>");
+        
+        //redondea hacia arriba
+        d = Math.floor(4.55);
+        document.write("floor: " + d + "<br>");
+        
+        //redondea hacia el entero más próximo, si es < 0.5 redondea hacia abajo y si es mayor hacia arriba
+        d = Math.round(4.55);
+        document.write("round: " + d + "<br>");
+
+        //quita los decimales
+        d = Math.trunc(4.55);
+        document.write("trunc: " + d + "<br>");
+
+        //obtiene el maximo valor de un rango
+        d = Math.max(40,60,55,32,65,12,9);
+        document.write("max: " + d + "<br>");
+
+        //obtiene el minimo valor de un rango
+        d = Math.min(40,60,55,32,65,12,9);
+        document.write("min: " + d + "<br>");
+        document.write("<br>---------------------------------<br>");
+
+        
+        document.write("<h3> 53.- metodos math PARTE 2</h3>");
+        //raiz cuadrada
+        d = Math.sqrt(64);
+        document.write("sqrt: " + d + "<br>");
+        
+        //raiz cubica
+        d = Math.cbrt(64);
+        document.write("cbrt: " + d + "<br>");
+
+        //exponencial a n potencia
+        d = Math.pow(4,3);
+        document.write("pow: " + d + "<br>");
+
+        //numero random
+        d = Math.trunc(Math.random() * 100);
+        document.write("random: " + d + "<br>");
+
+        //valor absoluto
+        d = Math.abs(-88);
+        document.write("abs: " + d + "<br>");
+
+        //valor de pi
+        d = Math.PI;
+        document.write("PI: " + d + "<br>");
+
+        document.write("<br>---------------------------------<br>");
+
+        
+        document.write("<h3> 54.- metodos date</h3>");
+        var fecha = new Date();
+        document.write(fecha + "<br>");
+        document.write(fecha.getDate() + "<br>");
+        document.write(fecha.getFullYear() + "<br>");
+        document.write(fecha.getUTCHours() + "<br>");
+        document.write(fecha.getMonth() + "<br>");
+        document.write(fecha.getSeconds() + "<br>");
+
+
+        document.write(fecha.setDate(27) + "<br>");
+        document.write(fecha.setFullYear(2020) + "<br>");
+        document.write(fecha.setHours(10) + "<br>");
+        document.write(fecha.setMinutes(48) + "<br>");
+        document.write(fecha.toString() + "<br>");
+        document.write("<br>---------------------------------<br>");
+        
+    </script>
+
+    </body>
+</html>
