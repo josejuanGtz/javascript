@@ -132,7 +132,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header" class="noclass" style="background-color: gold">
+      <div id="header" class="noclass" style="background-color: red; color: white;">
         <h1>Meta Brains</h1>
       </div>
       <div id="menu">
@@ -192,9 +192,19 @@
       //   name = document.getElementById("header").getAttribute("class");
       //   name = document.getElementById("header").getAttribute("style");
       //   name = document.getElementById("header").getAttributeNode("style");
-      name = document.getElementById("header").attributes;
+      //name = document.getElementById("header").attributes;
+       //document.querySelector("#header").style.color = "green";
+      document.getElementById("header").addEventListener("click",func);
+      document.getElementById("header").addEventListener("click",function func1() {
+        document.getElementById("header").style.color = "pink"; 
+      });
 
-      console.log(name);
+      function func() 
+      {
+        document.getElementById("header").style.background = "yellow";  
+      }
+      
+       //console.log(name);
     </script>
   </body>
 </html>
